@@ -1,5 +1,7 @@
 Question::Application.routes.draw do
   get "books" => "books#index"
+  get "books/new"
+  post "books/create"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

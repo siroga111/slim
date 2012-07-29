@@ -1,0 +1,19 @@
+== form_for :book, :url => { :action => :create } do |f|
+  p
+    = f.label :title
+    = f.text_field :title
+
+
+  p
+    == f.label :text
+    == f.text_area :text
+
+  p
+    == f.label :author
+    == f.text_field :author
+
+  p
+    == f.submit
+
+== link_to 'Back', :action => :index
+
